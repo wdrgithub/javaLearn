@@ -8,4 +8,9 @@ Learn github
 ####四级标题  
 #####五级标题  
 ######六级标题  
-==
+
+这是一段普通的文本，Enter不能实现回车
+要使用\<br>
+http:www.baidu.cocm
+    
+    hello,github
