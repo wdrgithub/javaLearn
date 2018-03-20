@@ -34,3 +34,20 @@ Learn github
 >>>>平衡二叉树
 
 ![百度log](http://www.baidu.com/img/bdlogo.gif)
+![github项目中的图片](https://github.com/wdrgithub/javaLearn/blob/master/picture/1.jpg "github测试图")
+
+```Java
+public static void main(String[] args) {
+
+        List<ODSInterface> odsInterfaceList = new ArrayList<>();
+        ODSInterface odsInterface = new ODSInterface();
+        odsInterface.setRatioStock(new BigDecimal(100));
+        odsInterfaceList.add(odsInterface);
+        if (CollectionUtils.isNotEmpty(odsInterfaceList)) {
+            odsInterfaceList = JSONArray.parseArray(
+                    JsonMapper.JSON_NON_EMPTY_MAPPER.toJson(odsInterfaceList), ODSInterface.class);
+        }
+
+        System.out.println(odsInterfaceList.get(0).getRatioStock());
+}
+```
